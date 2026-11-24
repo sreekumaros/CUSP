@@ -1,0 +1,16 @@
+__pycache__/
+*.pyc
+.venv/
+.DS_Store
+# datasets and large artefacts (licensed by their providers / regenerable)
+/data/
+*.pt
+*.engine
+*.onnx
+/cal.npz
+# run outputs (logged copies used in the paper are under results/)
+/out_*/
+/out_*.log
+idd_pilot/overlays/
+/summary.md
+/results_sim.json

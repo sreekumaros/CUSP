@@ -1,0 +1,12 @@
+fit frames 100 from ['20220118103808_seq_1', '20220118103808_seq_11', '20220118103808_seq_12', '20220118103808_seq_13']; pilot frames 50 from ['20220118103808_seq_2']
+label classes: {"Car": 701, "TourCar": 396, "MotorcyleRider": 430, "Pedestrian": 367, "Truck": 73, "Scooter": 168, "ScooterRider": 235, "Motorcycle": 177, "BicycleGroup": 6, "Bus": 54}
+coarse: heading 265 deg, f 2000, score 97.1 (16 s)
+IoU search: score 159.0
+edge LSQ 1: 223 pairs, median |edge residual| 8.13 px
+edge LSQ 2: 216 pairs, median |edge residual| 7.60 px
+edge LSQ 3: 217 pairs, median |edge residual| 7.69 px
+edge LSQ 4: 218 pairs, median |edge residual| 7.69 px
+camera: f=2464.2 u0=527.7 v0=524.6 heading=265.5 deg  h=1.90 m  y_h=529.4
+fit quality: 252 matches, median IoU 0.785, bottom-row error median 6.4 px (p90 18.6)
+contact offset delta: {'four': 0.7000000000000001, 'two': 0.05}; median widths: {'four': 1.437885825228014, 'two': 0.6781484885365877}
+overlays written (green = projected 3D labels, red = YOLO26s, blue line = horizon)

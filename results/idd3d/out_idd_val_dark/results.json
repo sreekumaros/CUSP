@@ -1,0 +1,670 @@
+{
+ "info": {
+  "calib": [
+   "idd=/Volumes/SKOS-APFS/PHD-CUSP/data/idd_kitti/calibration:all"
+  ],
+  "test": [
+   "idd=/Volumes/SKOS-APFS/PHD-CUSP/data/idd_kitti/validation:all"
+  ],
+  "frontend": "yolo (yolo26s.pt)",
+  "alpha": 0.05,
+  "n_cal": 1984,
+  "n_test": 1475,
+  "latency": {
+   "CUSP module": {
+    "mean": 0.07632473612223596,
+    "p99": 0.27762581943534315
+   },
+   "Detector + tracker": {
+    "mean": 25.50585562006745,
+    "p99": 39.92495967189974
+   },
+   "End to end": {
+    "mean": 25.582180356189685,
+    "p99": 40.13480768828385
+   }
+  },
+  "alpha_mean": 0.043299000496031755,
+  "alpha_min": 0.013500000000000009,
+  "alpha_max": 0.05,
+  "mount_calib": {
+   "h": 1.9,
+   "yh": 559.4731002189247,
+   "delta": 1.1,
+   "n": 2627,
+   "resid_px": 7.79741958825241
+  },
+  "mount_test": {
+   "h": 1.9,
+   "yh": 559.4731002189247,
+   "delta": 1.1,
+   "n": 2627,
+   "resid_px": 7.79741958825241
+  },
+  "same_camera": true,
+  "band_scores": {
+   "own lane 1-10 m": 150,
+   "own lane 10-30 m": 574,
+   "own lane 30-60 m": 100,
+   "adjacent 1-10 m": 118,
+   "adjacent 10-30 m": 760,
+   "adjacent 30-60 m": 177,
+   "kerbside 1-10 m": 0,
+   "kerbside 10-30 m": 24,
+   "kerbside 30-60 m": 81
+  },
+  "group_source": {
+   "own lane 1-10 m": "zone x band",
+   "own lane 10-30 m": "zone x band",
+   "own lane 30-60 m": "zone",
+   "adjacent 1-10 m": "zone",
+   "adjacent 10-30 m": "zone x band",
+   "adjacent 30-60 m": "zone x band",
+   "kerbside 1-10 m": "global",
+   "kerbside 10-30 m": "global",
+   "kerbside 30-60 m": "global"
+  },
+  "corrupt": "dark x1.5",
+  "cal_quantiles": {
+   "q_s_975": 17.14911535957198,
+   "q_v_975": 8.77295612834245,
+   "q_nu_95": 4.317269722648882
+  }
+ },
+ "results": {
+  "Point-KF": {
+   "all": {
+    "n": 1475,
+    "cov_range": 49.559322033898304,
+    "n_rate": 1448,
+    "cov_rate": 44.751381215469614,
+    "margin_pct": 0.0
+   },
+   "band_1": {
+    "n": 952,
+    "cov_range": 55.14705882352941,
+    "n_rate": 938,
+    "cov_rate": 50.21321961620469,
+    "margin_pct": 0.0
+   },
+   "occl_1": {
+    "n": 249,
+    "cov_range": 44.17670682730924,
+    "n_rate": 245,
+    "cov_rate": 43.673469387755105,
+    "margin_pct": 0.0
+   },
+   "zone_1": {
+    "n": 889,
+    "cov_range": 53.655793025871766,
+    "n_rate": 871,
+    "cov_rate": 45.2353616532721,
+    "margin_pct": 0.0
+   },
+   "corridor": {
+    "n": 338,
+    "cov_range": 54.437869822485204,
+    "n_rate": 333,
+    "cov_rate": 47.447447447447445,
+    "margin_pct": 0.0
+   },
+   "occl_0": {
+    "n": 1226,
+    "cov_range": 50.65252854812398,
+    "n_rate": 1203,
+    "cov_rate": 44.970906068162925,
+    "margin_pct": 0.0
+   },
+   "zone_0": {
+    "n": 338,
+    "cov_range": 54.437869822485204,
+    "n_rate": 333,
+    "cov_rate": 47.447447447447445,
+    "margin_pct": 0.0
+   },
+   "cband_1": {
+    "n": 282,
+    "cov_range": 59.219858156028366,
+    "n_rate": 278,
+    "cov_rate": 53.597122302158276,
+    "margin_pct": 0.0
+   },
+   "zone_2": {
+    "n": 248,
+    "cov_range": 28.225806451612904,
+    "n_rate": 244,
+    "cov_rate": 39.34426229508197,
+    "margin_pct": 0.0
+   },
+   "band_2": {
+    "n": 514,
+    "cov_range": 38.91050583657587,
+    "n_rate": 501,
+    "cov_rate": 34.73053892215569,
+    "margin_pct": 0.0
+   },
+   "band_0": {
+    "n": 9,
+    "cov_range": 66.66666666666667,
+    "n_rate": 9,
+    "cov_rate": 33.333333333333336,
+    "margin_pct": 0.0
+   },
+   "cband_2": {
+    "n": 51,
+    "cov_range": 23.529411764705884,
+    "n_rate": 50,
+    "cov_rate": 16.0,
+    "margin_pct": 0.0
+   },
+   "cband_0": {
+    "n": 5,
+    "cov_range": 100.0,
+    "n_rate": 5,
+    "cov_rate": 20.0,
+    "margin_pct": 0.0
+   },
+   "cap": {
+    "n": 333,
+    "unsafe_pct": 46.246246246246244,
+    "mean_slack_mps": 0.4086866284308142,
+    "mean_slack_rel_pct": 2.5295023087562662
+   }
+  },
+  "Gaussian-KF": {
+   "all": {
+    "n": 1475,
+    "cov_range": 61.96610169491525,
+    "n_rate": 1448,
+    "cov_rate": 65.53867403314918,
+    "margin_pct": 3.6933660805303936
+   },
+   "band_1": {
+    "n": 952,
+    "cov_range": 67.96218487394958,
+    "n_rate": 938,
+    "cov_rate": 73.66737739872069,
+    "margin_pct": 3.058221835235066
+   },
+   "occl_1": {
+    "n": 249,
+    "cov_range": 65.06024096385542,
+    "n_rate": 245,
+    "cov_rate": 63.673469387755105,
+    "margin_pct": 5.475133319553446
+   },
+   "zone_1": {
+    "n": 889,
+    "cov_range": 63.892013498312714,
+    "n_rate": 871,
+    "cov_rate": 65.78645235361654,
+    "margin_pct": 3.442921549949517
+   },
+   "corridor": {
+    "n": 338,
+    "cov_range": 68.93491124260355,
+    "n_rate": 333,
+    "cov_rate": 73.27327327327328,
+    "margin_pct": 3.1270335056164424
+   },
+   "occl_0": {
+    "n": 1226,
+    "cov_range": 61.33768352365416,
+    "n_rate": 1203,
+    "cov_rate": 65.9185369908562,
+    "margin_pct": 3.3314900262753104
+   },
+   "zone_0": {
+    "n": 338,
+    "cov_range": 68.93491124260355,
+    "n_rate": 333,
+    "cov_rate": 73.27327327327328,
+    "margin_pct": 3.1270335056164424
+   },
+   "cband_1": {
+    "n": 282,
+    "cov_range": 74.822695035461,
+    "n_rate": 278,
+    "cov_rate": 83.09352517985612,
+    "margin_pct": 2.9322331192146667
+   },
+   "zone_2": {
+    "n": 248,
+    "cov_range": 45.564516129032256,
+    "n_rate": 244,
+    "cov_rate": 54.09836065573771,
+    "margin_pct": 5.362985427334108
+   },
+   "band_2": {
+    "n": 514,
+    "cov_range": 50.583657587548636,
+    "n_rate": 501,
+    "cov_rate": 50.49900199600798,
+    "margin_pct": 4.892586116257329
+   },
+   "band_0": {
+    "n": 9,
+    "cov_range": 77.77777777777777,
+    "n_rate": 9,
+    "cov_rate": 55.55555555555556,
+    "margin_pct": 2.388724209142982
+   },
+   "cband_2": {
+    "n": 51,
+    "cov_range": 33.333333333333336,
+    "n_rate": 50,
+    "cov_rate": 20.0,
+    "margin_pct": 4.379775228901975
+   },
+   "cband_0": {
+    "n": 5,
+    "cov_range": 100.0,
+    "n_rate": 5,
+    "cov_rate": 60.0,
+    "margin_pct": 1.3358097211643494
+   },
+   "cap": {
+    "n": 333,
+    "unsafe_pct": 25.225225225225227,
+    "mean_slack_mps": 0.8102939081179975,
+    "mean_slack_rel_pct": 5.237355888762592
+   }
+  },
+  "Split-CP": {
+   "all": {
+    "n": 1475,
+    "cov_range": 98.44067796610169,
+    "n_rate": 1448,
+    "cov_rate": 94.7513812154696,
+    "margin_pct": 27.105973680970653
+   },
+   "band_1": {
+    "n": 952,
+    "cov_range": 97.58403361344538,
+    "n_rate": 938,
+    "cov_rate": 97.97441364605544,
+    "margin_pct": 23.122830984253422
+   },
+   "occl_1": {
+    "n": 249,
+    "cov_range": 96.3855421686747,
+    "n_rate": 245,
+    "cov_rate": 90.61224489795919,
+    "margin_pct": 37.40825637641925
+   },
+   "zone_1": {
+    "n": 889,
+    "cov_range": 98.76265466816648,
+    "n_rate": 871,
+    "cov_rate": 95.63719862227325,
+    "margin_pct": 25.77091646405382
+   },
+   "corridor": {
+    "n": 338,
+    "cov_range": 99.40828402366864,
+    "n_rate": 333,
+    "cov_rate": 95.1951951951952,
+    "margin_pct": 23.82679852058164
+   },
+   "occl_0": {
+    "n": 1226,
+    "cov_range": 98.85807504078304,
+    "n_rate": 1203,
+    "cov_rate": 95.59434746467166,
+    "margin_pct": 25.01358510742523
+   },
+   "zone_0": {
+    "n": 338,
+    "cov_range": 99.40828402366864,
+    "n_rate": 333,
+    "cov_rate": 95.1951951951952,
+    "margin_pct": 23.82679852058164
+   },
+   "cband_1": {
+    "n": 282,
+    "cov_range": 99.29078014184397,
+    "n_rate": 278,
+    "cov_rate": 100.0,
+    "margin_pct": 22.51081572370342
+   },
+   "zone_2": {
+    "n": 248,
+    "cov_range": 95.96774193548387,
+    "n_rate": 244,
+    "cov_rate": 90.98360655737704,
+    "margin_pct": 36.360921544077726
+   },
+   "band_2": {
+    "n": 514,
+    "cov_range": 100.0,
+    "n_rate": 501,
+    "cov_rate": 88.62275449101796,
+    "margin_pct": 34.630169691566536
+   },
+   "band_0": {
+    "n": 9,
+    "cov_range": 100.0,
+    "n_rate": 9,
+    "cov_rate": 100.0,
+    "margin_pct": 18.71876232858305
+   },
+   "cband_2": {
+    "n": 51,
+    "cov_range": 100.0,
+    "n_rate": 50,
+    "cov_rate": 68.0,
+    "margin_pct": 32.33835634706218
+   },
+   "cband_0": {
+    "n": 5,
+    "cov_range": 100.0,
+    "n_rate": 5,
+    "cov_rate": 100.0,
+    "margin_pct": 11.230338434410928
+   },
+   "cap": {
+    "n": 333,
+    "unsafe_pct": 1.2012012012012012,
+    "mean_slack_mps": 3.363715407150589,
+    "mean_slack_rel_pct": 22.43272535821936
+   }
+  },
+  "CUSP": {
+   "all": {
+    "n": 1475,
+    "cov_range": 98.50847457627118,
+    "n_rate": 1448,
+    "cov_rate": 95.44198895027624,
+    "margin_pct": 27.680541580546553
+   },
+   "band_1": {
+    "n": 952,
+    "cov_range": 97.6890756302521,
+    "n_rate": 938,
+    "cov_rate": 98.18763326226012,
+    "margin_pct": 23.60356519965911
+   },
+   "occl_1": {
+    "n": 249,
+    "cov_range": 96.78714859437751,
+    "n_rate": 245,
+    "cov_rate": 92.24489795918367,
+    "margin_pct": 38.15960590927737
+   },
+   "zone_1": {
+    "n": 889,
+    "cov_range": 98.76265466816648,
+    "n_rate": 871,
+    "cov_rate": 95.86681974741676,
+    "margin_pct": 26.3230421534469
+   },
+   "corridor": {
+    "n": 338,
+    "cov_range": 99.40828402366864,
+    "n_rate": 333,
+    "cov_rate": 96.3963963963964,
+    "margin_pct": 24.27708517164151
+   },
+   "occl_0": {
+    "n": 1226,
+    "cov_range": 98.85807504078304,
+    "n_rate": 1203,
+    "cov_rate": 96.09310058187863,
+    "margin_pct": 25.55224874379779
+   },
+   "zone_0": {
+    "n": 338,
+    "cov_range": 99.40828402366864,
+    "n_rate": 333,
+    "cov_rate": 96.3963963963964,
+    "margin_pct": 24.27708517164151
+   },
+   "cband_1": {
+    "n": 282,
+    "cov_range": 99.29078014184397,
+    "n_rate": 278,
+    "cov_rate": 100.0,
+    "margin_pct": 22.909668850350908
+   },
+   "zone_2": {
+    "n": 248,
+    "cov_range": 96.37096774193549,
+    "n_rate": 244,
+    "cov_rate": 92.62295081967213,
+    "margin_pct": 37.18532084224627
+   },
+   "band_2": {
+    "n": 514,
+    "cov_range": 100.0,
+    "n_rate": 501,
+    "cov_rate": 90.21956087824351,
+    "margin_pct": 35.38251036589172
+   },
+   "band_0": {
+    "n": 9,
+    "cov_range": 100.0,
+    "n_rate": 9,
+    "cov_rate": 100.0,
+    "margin_pct": 19.066048129149994
+   },
+   "cband_2": {
+    "n": 51,
+    "cov_range": 100.0,
+    "n_rate": 50,
+    "cov_rate": 76.0,
+    "margin_pct": 33.0765613421066
+   },
+   "cband_0": {
+    "n": 5,
+    "cov_range": 100.0,
+    "n_rate": 5,
+    "cov_rate": 100.0,
+    "margin_pct": 11.644708753686611
+   },
+   "cap": {
+    "n": 333,
+    "unsafe_pct": 1.2012012012012012,
+    "mean_slack_mps": 3.4479598065400747,
+    "mean_slack_rel_pct": 22.99111117995697
+   }
+  },
+  "Split-CP (group)": {
+   "all": {
+    "n": 1475,
+    "cov_range": 97.55932203389831,
+    "n_rate": 1448,
+    "cov_rate": 93.71546961325967,
+    "margin_pct": 23.975480317803132
+   },
+   "band_1": {
+    "n": 952,
+    "cov_range": 96.21848739495799,
+    "n_rate": 938,
+    "cov_rate": 97.44136460554371,
+    "margin_pct": 19.277384338234906
+   },
+   "occl_1": {
+    "n": 249,
+    "cov_range": 95.58232931726907,
+    "n_rate": 245,
+    "cov_rate": 90.61224489795919,
+    "margin_pct": 33.33562543600806
+   },
+   "zone_1": {
+    "n": 889,
+    "cov_range": 97.30033745781778,
+    "n_rate": 871,
+    "cov_rate": 95.75200918484501,
+    "margin_pct": 22.612171239642958
+   },
+   "corridor": {
+    "n": 338,
+    "cov_range": 99.40828402366864,
+    "n_rate": 333,
+    "cov_rate": 90.3903903903904,
+    "margin_pct": 18.76696265429713
+   },
+   "occl_0": {
+    "n": 1226,
+    "cov_range": 97.96084828711255,
+    "n_rate": 1203,
+    "cov_rate": 94.3474646716542,
+    "margin_pct": 22.074439425117067
+   },
+   "zone_0": {
+    "n": 338,
+    "cov_range": 99.40828402366864,
+    "n_rate": 333,
+    "cov_rate": 90.3903903903904,
+    "margin_pct": 18.76696265429713
+   },
+   "cband_1": {
+    "n": 282,
+    "cov_range": 99.29078014184397,
+    "n_rate": 278,
+    "cov_rate": 98.20143884892086,
+    "margin_pct": 16.563832186463795
+   },
+   "zone_2": {
+    "n": 248,
+    "cov_range": 95.96774193548387,
+    "n_rate": 244,
+    "cov_rate": 90.98360655737704,
+    "margin_pct": 35.96120911114718
+   },
+   "band_2": {
+    "n": 514,
+    "cov_range": 100.0,
+    "n_rate": 501,
+    "cov_rate": 87.02594810379242,
+    "margin_pct": 32.73700674365085
+   },
+   "band_0": {
+    "n": 9,
+    "cov_range": 100.0,
+    "n_rate": 9,
+    "cov_rate": 77.77777777777777,
+    "margin_pct": 20.54912361371118
+   },
+   "cband_2": {
+    "n": 51,
+    "cov_range": 100.0,
+    "n_rate": 50,
+    "cov_rate": 50.0,
+    "margin_pct": 31.424509751585635
+   },
+   "cband_0": {
+    "n": 5,
+    "cov_range": 100.0,
+    "n_rate": 5,
+    "cov_rate": 60.0,
+    "margin_pct": 13.916540647754388
+   },
+   "cap": {
+    "n": 333,
+    "unsafe_pct": 3.903903903903904,
+    "mean_slack_mps": 2.2517715904984357,
+    "mean_slack_rel_pct": 14.804841510448323
+   }
+  },
+  "CUSP (group)": {
+   "all": {
+    "n": 1475,
+    "cov_range": 97.69491525423729,
+    "n_rate": 1448,
+    "cov_rate": 94.4060773480663,
+    "margin_pct": 24.756553800347838
+   },
+   "band_1": {
+    "n": 952,
+    "cov_range": 96.42857142857143,
+    "n_rate": 938,
+    "cov_rate": 97.76119402985074,
+    "margin_pct": 19.90506572318846
+   },
+   "occl_1": {
+    "n": 249,
+    "cov_range": 96.3855421686747,
+    "n_rate": 245,
+    "cov_rate": 92.24489795918367,
+    "margin_pct": 34.23931320287981
+   },
+   "zone_1": {
+    "n": 889,
+    "cov_range": 97.41282339707537,
+    "n_rate": 871,
+    "cov_rate": 95.98163030998852,
+    "margin_pct": 23.516400784855424
+   },
+   "corridor": {
+    "n": 338,
+    "cov_range": 99.40828402366864,
+    "n_rate": 333,
+    "cov_rate": 91.5915915915916,
+    "margin_pct": 19.142552069270316
+   },
+   "occl_0": {
+    "n": 1226,
+    "cov_range": 97.96084828711255,
+    "n_rate": 1203,
+    "cov_rate": 94.84621778886118,
+    "margin_pct": 22.830610006521944
+   },
+   "zone_0": {
+    "n": 338,
+    "cov_range": 99.40828402366864,
+    "n_rate": 333,
+    "cov_rate": 91.5915915915916,
+    "margin_pct": 19.142552069270316
+   },
+   "cband_1": {
+    "n": 282,
+    "cov_range": 99.29078014184397,
+    "n_rate": 278,
+    "cov_rate": 98.20143884892086,
+    "margin_pct": 16.94678311628865
+   },
+   "zone_2": {
+    "n": 248,
+    "cov_range": 96.37096774193549,
+    "n_rate": 244,
+    "cov_rate": 92.62295081967213,
+    "margin_pct": 36.853443380496586
+   },
+   "band_2": {
+    "n": 514,
+    "cov_range": 100.0,
+    "n_rate": 501,
+    "cov_rate": 88.42315369261478,
+    "margin_pct": 33.81152118386603
+   },
+   "band_0": {
+    "n": 9,
+    "cov_range": 100.0,
+    "n_rate": 9,
+    "cov_rate": 77.77777777777777,
+    "margin_pct": 20.796933170049847
+   },
+   "cband_2": {
+    "n": 51,
+    "cov_range": 100.0,
+    "n_rate": 50,
+    "cov_rate": 58.0,
+    "margin_pct": 31.796216811395954
+   },
+   "cband_0": {
+    "n": 5,
+    "cov_range": 100.0,
+    "n_rate": 5,
+    "cov_rate": 60.0,
+    "margin_pct": 13.916540647754388
+   },
+   "cap": {
+    "n": 333,
+    "unsafe_pct": 2.4024024024024024,
+    "mean_slack_mps": 2.3311947211712614,
+    "mean_slack_rel_pct": 15.327730928525899
+   }
+  }
+ }
+}
